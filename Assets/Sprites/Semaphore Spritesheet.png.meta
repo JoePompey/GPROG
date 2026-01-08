@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 065250a0a55088a45a81ddfdd37e9ae3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8748609679908424888
+    second: Semaphore Spritesheet_0
+  - first:
+      213: 970896758511389769
+    second: Semaphore Spritesheet_1
+  - first:
+      213: 3644170617289425178
+    second: Semaphore Spritesheet_2
+  - first:
+      213: 2854398062301109550
+    second: Semaphore Spritesheet_3
+  - first:
+      213: -9213012368386985448
+    second: Semaphore Spritesheet_4
+  - first:
+      213: -4407412991642323042
+    second: Semaphore Spritesheet_5
+  - first:
+      213: 8239309897459394516
+    second: Semaphore Spritesheet_6
+  - first:
+      213: 5776898548410677509
+    second: Semaphore Spritesheet_7
+  - first:
+      213: 1285874293545893331
+    second: Semaphore Spritesheet_8
+  - first:
+      213: -6290959753889154313
+    second: Semaphore Spritesheet_9
+  - first:
+      213: -792202710400939429
+    second: Semaphore Spritesheet_10
+  - first:
+      213: -2090122028696151222
+    second: Semaphore Spritesheet_11
+  - first:
+      213: 166452563686836834
+    second: Semaphore Spritesheet_12
+  - first:
+      213: -2552238206377257591
+    second: Semaphore Spritesheet_13
+  - first:
+      213: -7301800985436074508
+    second: Semaphore Spritesheet_14
+  - first:
+      213: -8062905006072057552
+    second: Semaphore Spritesheet_15
+  - first:
+      213: 62099742270238637
+    second: Semaphore Spritesheet_16
+  - first:
+      213: 6424807085513634473
+    second: Semaphore Spritesheet_17
+  - first:
+      213: -7773755517529192936
+    second: Semaphore Spritesheet_18
+  - first:
+      213: 7767053119500163538
+    second: Semaphore Spritesheet_19
+  - first:
+      213: 3692021578342084286
+    second: Semaphore Spritesheet_20
+  - first:
+      213: 6985039960766237653
+    second: Semaphore Spritesheet_21
+  - first:
+      213: -8114251228234125314
+    second: Semaphore Spritesheet_22
+  - first:
+      213: 4527840792399235296
+    second: Semaphore Spritesheet_23
+  - first:
+      213: 6189265122159736582
+    second: Semaphore Spritesheet_24
+  - first:
+      213: 5649084452751722768
+    second: Semaphore Spritesheet_25
+  - first:
+      213: -7094938629676583804
+    second: Semaphore Spritesheet_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 12293
+        width: 578
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843b38629d1b69680800000000000000
+      internalID: -8748609679908424888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 12293
+        width: 686
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c46a43571597d00800000000000000
+      internalID: 970896758511389769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 5183
+        y: 12293
+        width: 722
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11c3786ed1b29230800000000000000
+      internalID: 3644170617289425178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 7829
+        y: 12293
+        width: 380
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d55071aebdc9720800000000000000
+      internalID: 2854398062301109550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 10223
+        y: 12293
+        width: 722
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8127307401ec42080800000000000000
+      internalID: -9213012368386985448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 9989
+        width: 686
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97b7be4c39b5d2c0800000000000000
+      internalID: -4407412991642323042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 9989
+        width: 578
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d76d60b2b8e75270800000000000000
+      internalID: 8239309897459394516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 5219
+        y: 9989
+        width: 668
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509fc795f9aab2050800000000000000
+      internalID: 5776898548410677509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 7505
+        y: 9989
+        width: 686
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddfb9c6bd758d110800000000000000
+      internalID: 1285874293545893331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 10133
+        y: 9989
+        width: 776
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa782d4f6502b8a0800000000000000
+      internalID: -6290959753889154313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 7685
+        width: 668
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a437805d78105f0800000000000000
+      internalID: -792202710400939429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 7685
+        width: 1010
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bd85eb6156ef2e0800000000000000
+      internalID: -2090122028696151222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 5327
+        y: 7685
+        width: 974
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ac18a89bb5f4200800000000000000
+      internalID: 166452563686836834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 7631
+        y: 7685
+        width: 866
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98514b6afd0a49cd0800000000000000
+      internalID: -2552238206377257591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 9791
+        y: 7685
+        width: 704
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd4c7ab0bacaaa90800000000000000
+      internalID: -7301800985436074508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 5381
+        width: 776
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0313b57bd9eca1090800000000000000
+      internalID: -8062905006072057552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 5381
+        width: 1118
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf29a6f26f9cd000800000000000000
+      internalID: 62099742270238637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 5219
+        y: 5381
+        width: 1082
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2f3721100892950800000000000000
+      internalID: 6424807085513634473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 7523
+        y: 5381
+        width: 974
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81680fe3b821e1490800000000000000
+      internalID: -7773755517529192936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 9809
+        y: 5381
+        width: 794
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9956b19ad1acb60800000000000000
+      internalID: 7767053119500163538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 3077
+        width: 1136
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe28287012bc3330800000000000000
+      internalID: 3692021578342084286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 3077
+        width: 668
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db416306d8dfe060800000000000000
+      internalID: 6985039960766237653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 5633
+        y: 3077
+        width: 704
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: effe3d2cf73646f80800000000000000
+      internalID: -8114251228234125314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 7937
+        y: 3077
+        width: 686
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8ca7e063f16de30800000000000000
+      internalID: 4527840792399235296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 9791
+        y: 3077
+        width: 1118
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607bb0326dfa4e550800000000000000
+      internalID: 6189265122159736582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 773
+        width: 668
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019c2703164956e40800000000000000
+      internalID: 5649084452751722768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Semaphore Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 773
+        width: 290
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4843eea28e6b98d90800000000000000
+      internalID: -7094938629676583804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Semaphore Spritesheet_0: -8748609679908424888
+      Semaphore Spritesheet_1: 970896758511389769
+      Semaphore Spritesheet_10: -792202710400939429
+      Semaphore Spritesheet_11: -2090122028696151222
+      Semaphore Spritesheet_12: 166452563686836834
+      Semaphore Spritesheet_13: -2552238206377257591
+      Semaphore Spritesheet_14: -7301800985436074508
+      Semaphore Spritesheet_15: -8062905006072057552
+      Semaphore Spritesheet_16: 62099742270238637
+      Semaphore Spritesheet_17: 6424807085513634473
+      Semaphore Spritesheet_18: -7773755517529192936
+      Semaphore Spritesheet_19: 7767053119500163538
+      Semaphore Spritesheet_2: 3644170617289425178
+      Semaphore Spritesheet_20: 3692021578342084286
+      Semaphore Spritesheet_21: 6985039960766237653
+      Semaphore Spritesheet_22: -8114251228234125314
+      Semaphore Spritesheet_23: 4527840792399235296
+      Semaphore Spritesheet_24: 6189265122159736582
+      Semaphore Spritesheet_25: 5649084452751722768
+      Semaphore Spritesheet_26: -7094938629676583804
+      Semaphore Spritesheet_3: 2854398062301109550
+      Semaphore Spritesheet_4: -9213012368386985448
+      Semaphore Spritesheet_5: -4407412991642323042
+      Semaphore Spritesheet_6: 8239309897459394516
+      Semaphore Spritesheet_7: 5776898548410677509
+      Semaphore Spritesheet_8: 1285874293545893331
+      Semaphore Spritesheet_9: -6290959753889154313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
