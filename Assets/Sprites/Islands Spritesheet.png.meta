@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WaterTile
+      name: WATER
       rect:
         serializedVersion: 2
         x: 0
@@ -122,11 +122,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlainIslandTile
+      name: PLAIN
       rect:
         serializedVersion: 2
-        x: 2310
-        y: 4608
+        x: 2304
+        y: 4600
         width: 2304
         height: 2304
       alignment: 0
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PalmTile
+      name: PALM
       rect:
         serializedVersion: 2
         x: 4608
@@ -166,10 +166,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PineTile
+      name: PINE
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 2304
         width: 2304
         height: 2304
@@ -188,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StoneTile
+      name: STONY
       rect:
         serializedVersion: 2
         x: 2304
@@ -210,11 +210,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VolcanoTile
+      name: VOLCANO
       rect:
         serializedVersion: 2
         x: 4608
-        y: 2310
+        y: 2304
         width: 2304
         height: 2304
       alignment: 0
@@ -232,7 +232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HolidayTile
+      name: HOLIDAY
       rect:
         serializedVersion: 2
         x: 0
@@ -254,7 +254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PartyTile
+      name: PARTY
       rect:
         serializedVersion: 2
         x: 2304
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CityTile
+      name: CITY
       rect:
         serializedVersion: 2
         x: 4608
@@ -313,15 +313,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":2304.0,"y":2304.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      CityTile: -1864547946
-      HolidayTile: -1308060251
-      PalmTile: -1231645711
-      PartyTile: 1983226797
-      PineTile: 1207867646
-      PlainIslandTile: -618099902
-      StoneTile: 1830451128
-      VolcanoTile: 1717713877
-      WaterTile: -2773841308033806871
+      CITY: -1864547946
+      HOLIDAY: -1308060251
+      PALM: -1231645711
+      PARTY: 1983226797
+      PINE: 1207867646
+      PLAIN: -618099902
+      STONY: 1830451128
+      VOLCANO: 1717713877
+      WATER: -2773841308033806871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
