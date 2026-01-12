@@ -5,6 +5,7 @@ public class Sailor : MonoBehaviour
     private void Start()
     {
         DecideIsland();
+        NameSplitter();
     }
     
     //Decides what island they want to go to.
@@ -26,8 +27,19 @@ public class Sailor : MonoBehaviour
         //Picks random choice from available options.
         DesiredIsland = IslandOptions[Random.Range(0, 8)];
         //.
+    }
+    //.
 
-        print(DesiredIsland);
+    //Splits word into an array of letters that can be translated.
+    string[] SplitName;
+    void NameSplitter()
+    {
+        SplitName = new string[DesiredIsland.Length + 1];
+        for (int i = 0; i < DesiredIsland.Length; i++)
+        {
+            SplitName[i] = DesiredIsland[i].ToString();
+        }
+        SplitName[^1] = "New Word";
     }
     //.
 }
