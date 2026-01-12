@@ -126,7 +126,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -178,7 +178,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Semaphore Spritesheet_0
+      name: A
       rect:
         serializedVersion: 2
         x: 719
@@ -186,7 +186,7 @@ TextureImporter:
         width: 578
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_1
+      name: B
       rect:
         serializedVersion: 2
         x: 2915
@@ -208,7 +208,7 @@ TextureImporter:
         width: 686
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_2
+      name: C
       rect:
         serializedVersion: 2
         x: 5183
@@ -230,7 +230,7 @@ TextureImporter:
         width: 722
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_3
+      name: D
       rect:
         serializedVersion: 2
         x: 7829
@@ -252,7 +252,7 @@ TextureImporter:
         width: 380
         height: 1010
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,7 +266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_4
+      name: E
       rect:
         serializedVersion: 2
         x: 10223
@@ -274,7 +274,7 @@ TextureImporter:
         width: 722
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_5
+      name: F
       rect:
         serializedVersion: 2
         x: 1007
@@ -296,7 +296,7 @@ TextureImporter:
         width: 686
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -310,7 +310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_6
+      name: G
       rect:
         serializedVersion: 2
         x: 3311
@@ -318,7 +318,7 @@ TextureImporter:
         width: 578
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -332,7 +332,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_7
+      name: H
       rect:
         serializedVersion: 2
         x: 5219
@@ -340,7 +340,7 @@ TextureImporter:
         width: 668
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -354,15 +354,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_8
+      name: I
       rect:
         serializedVersion: 2
-        x: 7505
+        x: 7520
         y: 9989
         width: 686
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -376,15 +376,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_9
+      name: J
       rect:
         serializedVersion: 2
         x: 10133
-        y: 9989
+        y: 9959
         width: 776
         height: 1010
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -398,7 +398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_10
+      name: K
       rect:
         serializedVersion: 2
         x: 719
@@ -406,7 +406,7 @@ TextureImporter:
         width: 668
         height: 1010
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -420,7 +420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_11
+      name: L
       rect:
         serializedVersion: 2
         x: 3023
@@ -428,7 +428,7 @@ TextureImporter:
         width: 1010
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -442,7 +442,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_12
+      name: M
       rect:
         serializedVersion: 2
         x: 5327
@@ -450,7 +450,7 @@ TextureImporter:
         width: 974
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -464,7 +464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_13
+      name: N
       rect:
         serializedVersion: 2
         x: 7631
@@ -472,7 +472,7 @@ TextureImporter:
         width: 866
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_14
+      name: O
       rect:
         serializedVersion: 2
         x: 9791
@@ -494,7 +494,7 @@ TextureImporter:
         width: 704
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -508,7 +508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_15
+      name: P
       rect:
         serializedVersion: 2
         x: 611
@@ -516,7 +516,7 @@ TextureImporter:
         width: 776
         height: 1010
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -530,15 +530,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_16
+      name: Q
       rect:
         serializedVersion: 2
         x: 2915
-        y: 5381
+        y: 5411
         width: 1118
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -552,7 +552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_17
+      name: R
       rect:
         serializedVersion: 2
         x: 5219
@@ -560,7 +560,7 @@ TextureImporter:
         width: 1082
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -574,7 +574,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_18
+      name: S
       rect:
         serializedVersion: 2
         x: 7523
@@ -582,7 +582,7 @@ TextureImporter:
         width: 974
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -596,7 +596,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_19
+      name: T
       rect:
         serializedVersion: 2
         x: 9809
@@ -604,7 +604,7 @@ TextureImporter:
         width: 794
         height: 1010
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -618,7 +618,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_20
+      name: U
       rect:
         serializedVersion: 2
         x: 593
@@ -626,7 +626,7 @@ TextureImporter:
         width: 1136
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -640,7 +640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_21
+      name: V
       rect:
         serializedVersion: 2
         x: 3221
@@ -648,7 +648,7 @@ TextureImporter:
         width: 668
         height: 1010
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -662,7 +662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_22
+      name: W
       rect:
         serializedVersion: 2
         x: 5633
@@ -670,7 +670,7 @@ TextureImporter:
         width: 704
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -684,7 +684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_23
+      name: X
       rect:
         serializedVersion: 2
         x: 7937
@@ -692,7 +692,7 @@ TextureImporter:
         width: 686
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -706,7 +706,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_24
+      name: Y
       rect:
         serializedVersion: 2
         x: 9791
@@ -714,7 +714,7 @@ TextureImporter:
         width: 1118
         height: 884
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -728,15 +728,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_25
+      name: Z
       rect:
         serializedVersion: 2
         x: 1025
-        y: 773
+        y: 728
         width: 668
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -750,15 +750,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Semaphore Spritesheet_26
+      name: New Word
       rect:
         serializedVersion: 2
-        x: 3311
-        y: 773
+        x: 3296
+        y: 758
         width: 290
         height: 776
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -775,7 +775,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 34290275b46eed749ba6a7ce7a953736
     internalID: 0
     vertices: []
     indices: 
@@ -785,33 +785,33 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Semaphore Spritesheet_0: -8748609679908424888
-      Semaphore Spritesheet_1: 970896758511389769
-      Semaphore Spritesheet_10: -792202710400939429
-      Semaphore Spritesheet_11: -2090122028696151222
-      Semaphore Spritesheet_12: 166452563686836834
-      Semaphore Spritesheet_13: -2552238206377257591
-      Semaphore Spritesheet_14: -7301800985436074508
-      Semaphore Spritesheet_15: -8062905006072057552
-      Semaphore Spritesheet_16: 62099742270238637
-      Semaphore Spritesheet_17: 6424807085513634473
-      Semaphore Spritesheet_18: -7773755517529192936
-      Semaphore Spritesheet_19: 7767053119500163538
-      Semaphore Spritesheet_2: 3644170617289425178
-      Semaphore Spritesheet_20: 3692021578342084286
-      Semaphore Spritesheet_21: 6985039960766237653
-      Semaphore Spritesheet_22: -8114251228234125314
-      Semaphore Spritesheet_23: 4527840792399235296
-      Semaphore Spritesheet_24: 6189265122159736582
-      Semaphore Spritesheet_25: 5649084452751722768
-      Semaphore Spritesheet_26: -7094938629676583804
-      Semaphore Spritesheet_3: 2854398062301109550
-      Semaphore Spritesheet_4: -9213012368386985448
-      Semaphore Spritesheet_5: -4407412991642323042
-      Semaphore Spritesheet_6: 8239309897459394516
-      Semaphore Spritesheet_7: 5776898548410677509
-      Semaphore Spritesheet_8: 1285874293545893331
-      Semaphore Spritesheet_9: -6290959753889154313
+      A: -8748609679908424888
+      B: 970896758511389769
+      C: 3644170617289425178
+      D: 2854398062301109550
+      E: -9213012368386985448
+      F: -4407412991642323042
+      G: 8239309897459394516
+      H: 5776898548410677509
+      I: 1285874293545893331
+      J: -6290959753889154313
+      K: -792202710400939429
+      L: -2090122028696151222
+      M: 166452563686836834
+      N: -2552238206377257591
+      New Word: -7094938629676583804
+      O: -7301800985436074508
+      P: -8062905006072057552
+      Q: 62099742270238637
+      R: 6424807085513634473
+      S: -7773755517529192936
+      T: 7767053119500163538
+      U: 3692021578342084286
+      V: 6985039960766237653
+      W: -8114251228234125314
+      X: 4527840792399235296
+      Y: 6189265122159736582
+      Z: 5649084452751722768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
