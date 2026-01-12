@@ -1,11 +1,18 @@
+using System.Collections;
 using UnityEngine;
 
 public class Sailor : MonoBehaviour
 {
     private void Start()
     {
+        //Gets sprite ready.
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = ArmSprites[26];
+        //.
+
         DecideIsland();
         NameSplitter();
+        StartCoroutine(MoveArms());
     }
     
     //Decides what island they want to go to.
@@ -40,6 +47,43 @@ public class Sailor : MonoBehaviour
             SplitName[i] = DesiredIsland[i].ToString();
         }
         SplitName[^1] = "New Word";
+    }
+    //.
+
+
+    //Gets the correct sprites ready in inspector.
+    public Sprite[] ArmSprites;
+    private SpriteRenderer spriteRenderer;
+    //.
+
+    //Sets correct sprite for letter.
+    int delay = 1;
+    IEnumerator MoveArms()
+    {
+        bool Repeat = true;
+        while (Repeat == true)
+        {
+            for (int i = 0; i < SplitName.Length; i++)
+            {
+                //Gets index of the letter in the sprites.
+                int SpriteIndex = 26;
+                for (int j = 0; j < ArmSprites.Length; j++)
+                { 
+                    if (ArmSprites[j].name == SplitName[i])
+                    {
+                        SpriteIndex = j;
+                        break;
+                    }
+                }
+                //.
+
+                //Changes sprite to correct arms.
+                spriteRenderer.sprite = ArmSprites[SpriteIndex];
+                //.
+
+                yield return new WaitForSeconds(delay);
+            }
+        }
     }
     //.
 }
