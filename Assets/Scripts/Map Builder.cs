@@ -82,7 +82,7 @@ public class MapBuilder : MonoBehaviour
         {
             for (var j = 0;j < 8; j++)
             {
-                Vector3Int CurrentTilePosition = new Vector3Int(i, j, 0);
+                Vector3Int CurrentTilePosition = new Vector3Int(j, 8 - i, 0);
                 TileBase CurrentTileType = tileLookup[IslandPositions[i, j]];
                 
                 tilemap.SetTile(CurrentTilePosition, CurrentTileType);
