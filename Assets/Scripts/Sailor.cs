@@ -1,15 +1,11 @@
 using System.Collections;
+using System.IO;
 using UnityEngine;
 
 public class Sailor : MonoBehaviour
 {
     private void Start()
     {
-        //Gets sprite ready.
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = ArmSprites[26];
-        //.
-
         DecideIsland();
         NameSplitter();
         StartCoroutine(MoveArms());
@@ -50,36 +46,19 @@ public class Sailor : MonoBehaviour
     }
     //.
 
-
-    //Gets the correct sprites ready in inspector.
-    public Sprite[] ArmSprites;
-    private SpriteRenderer spriteRenderer;
-    //.
-
     //Sets correct sprite for letter.
-    int delay = 1;
+    private SpriteSetter SpriteSetterFile;
+    [SerializeField] int delay = 2;
     IEnumerator MoveArms()
     {
+        SpriteSetterFile = GetComponent<SpriteSetter>();
+
         bool Repeat = true;
         while (Repeat == true)
         {
             for (int i = 0; i < SplitName.Length; i++)
             {
-                //Gets index of the letter in the sprites.
-                int SpriteIndex = 26;
-                for (int j = 0; j < ArmSprites.Length; j++)
-                { 
-                    if (ArmSprites[j].name == SplitName[i])
-                    {
-                        SpriteIndex = j;
-                        break;
-                    }
-                }
-                //.
-
-                //Changes sprite to correct arms.
-                spriteRenderer.sprite = ArmSprites[SpriteIndex];
-                //.
+                SpriteSetterFile.SetArms(SplitName[i]);
 
                 yield return new WaitForSeconds(delay);
             }
