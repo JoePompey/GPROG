@@ -61,4 +61,11 @@ public class SemaphoreDictionary : MonoBehaviour
         //.
     }
     //.
+
+    //Getter script to read the translations.
+    public Dictionary<string, ArmPositions> GetTranslations()
+    {
+        return SemaphoreTranslations;
+    }
+    //.
 }

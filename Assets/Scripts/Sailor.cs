@@ -6,6 +6,8 @@ public class Sailor : MonoBehaviour
 {
     private void Start()
     {
+        SpriteSetterFile = GetComponent<SpriteSetter>();
+
         DecideIsland();
         NameSplitter();
         StartCoroutine(MoveArms());
@@ -51,8 +53,6 @@ public class Sailor : MonoBehaviour
     [SerializeField] int delay = 2;
     IEnumerator MoveArms()
     {
-        SpriteSetterFile = GetComponent<SpriteSetter>();
-
         bool Repeat = true;
         while (Repeat == true)
         {
