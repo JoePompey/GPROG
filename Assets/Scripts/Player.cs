@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     private int PurplePos = 4;
     private int BluePos = 4;
 
+    private string[] SelectedCoordinates = new string[2];
+
     private void Start()
     {
         ArmControls = controls.FindActionMap("ArmMovements");
@@ -25,6 +27,9 @@ public class Player : MonoBehaviour
         SemaphoreTranslations = SemaphoreDictionaryFile.GetTranslations();
 
         SpriteSetterFile = GetComponent<SpriteSetter>();
+
+        SelectedCoordinates[0] = " ";
+        SelectedCoordinates[1] = " ";
 
         SetSprite();
     }
@@ -51,6 +56,10 @@ public class Player : MonoBehaviour
         {
             CheckValidArms("Blue", -1);
             SetSprite();
+        }
+        if (ArmControls.FindAction("Enter").WasPressedThisFrame())
+        {
+            SelectCoordinate();
         }
     }
     //.
@@ -110,6 +119,25 @@ public class Player : MonoBehaviour
     {
         SpriteName = SemaphoreTranslations[new ArmPositions(PurplePos, BluePos)];
         SpriteSetterFile.SetArms(SpriteName);
+    }
+    //.
+
+    //Save selected co-ordinate.
+    int CurrentCoordinate = 0;
+    void SelectCoordinate()
+    {
+        SpriteName = SemaphoreTranslations[new ArmPositions(PurplePos, BluePos)];
+        if (CurrentCoordinate == 0)
+        {
+            SelectedCoordinates[0] = SpriteName;
+            CurrentCoordinate = 1;
+        }
+        else if (CurrentCoordinate == 1)
+        {
+            SelectedCoordinates[1] = SpriteName;
+            CurrentCoordinate = 0;
+        }
+        print(SelectedCoordinates[0] + SelectedCoordinates[1]);
     }
     //.
 }

@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Controls Spritesheet_0
+      name: Purple Prompt
       rect:
         serializedVersion: 2
         x: 179
@@ -114,7 +114,7 @@ TextureImporter:
         width: 218
         height: 488
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,15 +128,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controls Spritesheet_1
+      name: Blue Prompt
       rect:
         serializedVersion: 2
-        x: 755
-        y: 629
+        x: 754
+        y: 628
         width: 218
         height: 488
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controls Spritesheet_2
+      name: Accept Prompt
       rect:
         serializedVersion: 2
         x: 71
@@ -158,7 +158,7 @@ TextureImporter:
         width: 452
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6de62aa7948e9804b9a69611ca47fde6
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Controls Spritesheet_0: 6687683069814787665
-      Controls Spritesheet_1: -2433639806030133827
-      Controls Spritesheet_2: 786512846818607830
+      Accept Prompt: 786512846818607830
+      Blue Prompt: -2433639806030133827
+      Purple Prompt: 6687683069814787665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
