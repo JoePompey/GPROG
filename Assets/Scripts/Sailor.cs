@@ -7,7 +7,7 @@ public class Sailor : MonoBehaviour
     private void Start()
     {
         SpriteSetterFile = GetComponent<SpriteSetter>();
-
+        
         DecideIsland();
         NameSplitter();
         StartCoroutine(MoveArms());
@@ -63,6 +63,15 @@ public class Sailor : MonoBehaviour
                 yield return new WaitForSeconds(delay);
             }
         }
+    }
+    //.
+
+    //Resets sailor for next round.
+    void ResetSailor()
+    {
+        DecideIsland();
+        NameSplitter();
+        StartCoroutine(MoveArms());
     }
     //.
 }

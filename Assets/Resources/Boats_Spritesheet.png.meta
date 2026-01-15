@@ -103,15 +103,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boats Spritesheet_0
+      name: Grey Boat
       rect:
         serializedVersion: 2
-        x: 35
-        y: 2609
-        width: 2234
-        height: 1694
+        x: 0
+        y: 2304
+        width: 2304
+        height: 2304
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,15 +125,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boats Spritesheet_1
+      name: Brown Boat
       rect:
         serializedVersion: 2
-        x: 35
-        y: 305
-        width: 2234
-        height: 1694
+        x: 0
+        y: 0
+        width: 2304
+        height: 2304
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a24c33b79e08e244e824d9c0864764de
     internalID: 0
     vertices: []
     indices: 
@@ -158,10 +158,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":2304.0,"y":2304.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Boats Spritesheet_0: -6878151258361025369
-      Boats Spritesheet_1: -7435440289173611856
+      Brown Boat: -7435440289173611856
+      Grey Boat: -6878151258361025369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
