@@ -21,49 +21,49 @@ public class SemaphoreDictionary : MonoBehaviour
 
     //Declaring and initialising the dictionary.
     //-Declaring dictionary.
-    Dictionary<string, ArmPositions> SemaphoreTranslations;
+    Dictionary<ArmPositions, string> SemaphoreTranslations;
     //-.
 
-    void Start()
+    void Awake()
     {
         //Initialising dictionary.
-        SemaphoreTranslations = new Dictionary<string, ArmPositions>();
+        SemaphoreTranslations = new Dictionary<ArmPositions, string>();
         //.
 
         //Adding all the values where each number is a cardinal direction starting up at 0, and going 45 degrees clockwise.
-        SemaphoreTranslations.Add("A", new ArmPositions(5, 4));
-        SemaphoreTranslations.Add("B", new ArmPositions(6, 4));
-        SemaphoreTranslations.Add("C", new ArmPositions(7, 4));
-        SemaphoreTranslations.Add("D", new ArmPositions(0, 4));
-        SemaphoreTranslations.Add("E", new ArmPositions(4, 1));
-        SemaphoreTranslations.Add("F", new ArmPositions(4, 2));
-        SemaphoreTranslations.Add("G", new ArmPositions(4, 3));
-        SemaphoreTranslations.Add("H", new ArmPositions(6, 5));
-        SemaphoreTranslations.Add("I", new ArmPositions(7, 5));
-        SemaphoreTranslations.Add("J", new ArmPositions(0, 2));
-        SemaphoreTranslations.Add("K", new ArmPositions(5, 0));
-        SemaphoreTranslations.Add("L", new ArmPositions(5, 1));
-        SemaphoreTranslations.Add("M", new ArmPositions(5, 2));
-        SemaphoreTranslations.Add("N", new ArmPositions(5, 3));
-        SemaphoreTranslations.Add("O", new ArmPositions(6, 7));
-        SemaphoreTranslations.Add("P", new ArmPositions(6, 0));
-        SemaphoreTranslations.Add("Q", new ArmPositions(6, 1));
-        SemaphoreTranslations.Add("R", new ArmPositions(6, 2));
-        SemaphoreTranslations.Add("S", new ArmPositions(6, 3));
-        SemaphoreTranslations.Add("T", new ArmPositions(7, 0));
-        SemaphoreTranslations.Add("U", new ArmPositions(7, 1));
-        SemaphoreTranslations.Add("V", new ArmPositions(0, 3));
-        SemaphoreTranslations.Add("W", new ArmPositions(1, 2));
-        SemaphoreTranslations.Add("X", new ArmPositions(1, 3));
-        SemaphoreTranslations.Add("Y", new ArmPositions(7, 2));
-        SemaphoreTranslations.Add("Z", new ArmPositions(3, 2));
-        SemaphoreTranslations.Add("New Word", new ArmPositions(4, 4));
+        SemaphoreTranslations.Add(new ArmPositions(5, 4), "A");
+        SemaphoreTranslations.Add(new ArmPositions(6, 4), "B");
+        SemaphoreTranslations.Add(new ArmPositions(7, 4), "C");
+        SemaphoreTranslations.Add(new ArmPositions(0, 4), "D");
+        SemaphoreTranslations.Add(new ArmPositions(4, 1), "E");
+        SemaphoreTranslations.Add(new ArmPositions(4, 2), "F");
+        SemaphoreTranslations.Add(new ArmPositions(4, 3), "G");
+        SemaphoreTranslations.Add(new ArmPositions(6, 5), "H");
+        SemaphoreTranslations.Add(new ArmPositions(7, 5), "I");
+        SemaphoreTranslations.Add(new ArmPositions(0, 2), "J");
+        SemaphoreTranslations.Add(new ArmPositions(5, 0), "K");
+        SemaphoreTranslations.Add(new ArmPositions(5, 1), "L");
+        SemaphoreTranslations.Add(new ArmPositions(5, 2), "M");
+        SemaphoreTranslations.Add(new ArmPositions(5, 3), "N");
+        SemaphoreTranslations.Add(new ArmPositions(6, 7), "O");
+        SemaphoreTranslations.Add(new ArmPositions(6, 0), "P");
+        SemaphoreTranslations.Add(new ArmPositions(6, 1), "Q");
+        SemaphoreTranslations.Add(new ArmPositions(6, 2), "R");
+        SemaphoreTranslations.Add(new ArmPositions(6, 3), "S");
+        SemaphoreTranslations.Add(new ArmPositions(7, 0), "T");
+        SemaphoreTranslations.Add(new ArmPositions(7, 1), "U");
+        SemaphoreTranslations.Add(new ArmPositions(0, 3), "V");
+        SemaphoreTranslations.Add(new ArmPositions(1, 2), "W");
+        SemaphoreTranslations.Add(new ArmPositions(1, 3), "X");
+        SemaphoreTranslations.Add(new ArmPositions(7, 2), "Y");
+        SemaphoreTranslations.Add(new ArmPositions(3, 2), "Z");
+        SemaphoreTranslations.Add(new ArmPositions(4, 4), "New Word");
         //.
     }
     //.
 
     //Getter script to read the translations.
-    public Dictionary<string, ArmPositions> GetTranslations()
+    public Dictionary<ArmPositions, string> GetTranslations()
     {
         return SemaphoreTranslations;
     }

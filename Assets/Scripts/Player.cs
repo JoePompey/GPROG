@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
     private InputActionMap ArmControls;
     
     private SemaphoreDictionary SemaphoreDictionaryFile;
-    Dictionary<string, ArmPositions> SemaphoreTranslations;
+    Dictionary<ArmPositions, string> SemaphoreTranslations;
+    private SpriteSetter SpriteSetterFile;
     
     private int PurplePos = 4;
     private int BluePos = 4;
@@ -20,7 +21,12 @@ public class Player : MonoBehaviour
         ArmControls = controls.FindActionMap("ArmMovements");
 
         SemaphoreDictionaryFile = GetComponent<SemaphoreDictionary>();
+        SemaphoreTranslations = new Dictionary<ArmPositions, string>();
         SemaphoreTranslations = SemaphoreDictionaryFile.GetTranslations();
+
+        SpriteSetterFile = GetComponent<SpriteSetter>();
+
+        SetSprite();
     }
 
     //Controls.
@@ -29,18 +35,22 @@ public class Player : MonoBehaviour
         if (ArmControls.FindAction("PurpleClock").WasPressedThisFrame())
         {
             CheckValidArms("Purple", 1);
+            SetSprite();
         }
         if (ArmControls.FindAction("PurpleAnti").WasPressedThisFrame())
         {
             CheckValidArms("Purple", -1);
+            SetSprite();
         }
         if (ArmControls.FindAction("BlueClock").WasPressedThisFrame())
         {
             CheckValidArms("Blue", 1);
+            SetSprite();
         }
         if (ArmControls.FindAction("BlueAnti").WasPressedThisFrame())
         {
             CheckValidArms("Blue", -1);
+            SetSprite();
         }
     }
     //.
@@ -63,7 +73,7 @@ public class Player : MonoBehaviour
                     PurplePos = 7;
                 }
 
-                if (SemaphoreTranslations.ContainsValue(new ArmPositions(PurplePos, BluePos)))
+                if (SemaphoreTranslations.ContainsKey(new ArmPositions(PurplePos, BluePos)))
                 {
                     NextPosFound = true;
                 }
@@ -85,12 +95,21 @@ public class Player : MonoBehaviour
                     BluePos = 7;
                 }
 
-                if (SemaphoreTranslations.ContainsValue(new ArmPositions(PurplePos, BluePos)))
+                if (SemaphoreTranslations.ContainsKey(new ArmPositions(PurplePos, BluePos)))
                 {
                     NextPosFound = true;
                 }
             }
         }
+    }
+    //.
+
+    //Get letter from dictionary and change sprite.
+    string SpriteName = "New Word";
+    void SetSprite()
+    {
+        SpriteName = SemaphoreTranslations[new ArmPositions(PurplePos, BluePos)];
+        SpriteSetterFile.SetArms(SpriteName);
     }
     //.
 }
