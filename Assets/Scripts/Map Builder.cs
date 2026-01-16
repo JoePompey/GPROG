@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -13,7 +14,7 @@ public class MapBuilder : MonoBehaviour
     }
 
     //Making an empty array that will be the positions of the islands.
-    string[,] IslandPositions = new string[8, 8];
+    public string[,] IslandPositions = new string[8, 8];
     //.
 
     void AssignTiles()

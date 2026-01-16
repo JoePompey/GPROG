@@ -54,7 +54,7 @@ public class SemaphoreDictionary : MonoBehaviour
         SemaphoreTranslations.Add(new ArmPositions(7, 1), "U");
         SemaphoreTranslations.Add(new ArmPositions(0, 3), "V");
         SemaphoreTranslations.Add(new ArmPositions(1, 2), "W");
-        SemaphoreTranslations.Add(new ArmPositions(1, 3), "X");
+        SemaphoreTranslations.Add(new ArmPositions(3, 1), "X");
         SemaphoreTranslations.Add(new ArmPositions(7, 2), "Y");
         SemaphoreTranslations.Add(new ArmPositions(3, 2), "Z");
         SemaphoreTranslations.Add(new ArmPositions(4, 4), "New Word");

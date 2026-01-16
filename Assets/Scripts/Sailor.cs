@@ -7,7 +7,13 @@ public class Sailor : MonoBehaviour
     private void Start()
     {
         SpriteSetterFile = GetComponent<SpriteSetter>();
-        
+        MapScript = GameObject.Find("Tilemap").GetComponent<MapBuilder>();
+
+        Alphabet = new Sprite[26];
+        Alphabet = Resources.LoadAll<Sprite>("Alphabet_Spritesheet");
+
+        HeartsScript = GameObject.Find("HeartsSprite").GetComponent<SpriteSetter>();
+
         DecideIsland();
         NameSplitter();
         StartCoroutine(MoveArms());
@@ -72,6 +78,72 @@ public class Sailor : MonoBehaviour
         DecideIsland();
         NameSplitter();
         StartCoroutine(MoveArms());
+    }
+    //.
+
+    //Confirms if destination is correct.
+    MapBuilder MapScript;
+    Sprite[] Alphabet;
+    int XCoordIndex = -1;
+    int YCoordIndex = -1;
+
+    public void ConfirmDestination(string XCoord, string YCoord)
+    {
+        //Gets index number of co-ords to check easier.
+        for (int i = 0; i < 26; i++)
+        {
+            if (XCoord == Alphabet[i].name)
+            {
+                XCoordIndex = i;
+                break;
+            }
+        }
+        for (int i = 0; i < 26; i++)
+        {
+            if (YCoord == Alphabet[i].name)
+            {
+                YCoordIndex = i;
+                break;
+            }
+        }
+        //.
+
+        //Compares selected co-ords to desired name.
+        if (XCoordIndex < 8 && YCoordIndex < 8){
+            string SelectedIsland = MapScript.IslandPositions[YCoordIndex, XCoordIndex];
+            if (SelectedIsland == DesiredIsland)
+            {
+                GainPoint();
+            }
+            else
+            {
+                LoseLife();
+            }
+        }
+        else
+        {
+            LoseLife();
+        }
+        //.
+    }
+    //.
+
+    //Gain point and display.
+    int CurrentPoints = 0;
+    void GainPoint()
+    {
+        CurrentPoints += 1;
+    }
+
+    //.
+
+    //Lose life and display.
+    SpriteSetter HeartsScript;
+    int CurrentHearts = 3;
+    void LoseLife()
+    {
+        CurrentHearts -= 1;
+        HeartsScript.SetHearts(CurrentHearts);
     }
     //.
 }

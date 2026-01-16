@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static SemaphoreDictionary;
@@ -30,6 +31,10 @@ public class Player : MonoBehaviour
 
         SelectedCoordinates[0] = " ";
         SelectedCoordinates[1] = " ";
+
+        FirstCoord = GameObject.Find("FirstCoord").GetComponent<SpriteSetter>();
+        SecondCoord = GameObject.Find("SecondCoord").GetComponent<SpriteSetter>();
+        SailorScript = GameObject.Find("SailorSprite").GetComponent<Sailor>();
 
         SetSprite();
     }
@@ -124,20 +129,41 @@ public class Player : MonoBehaviour
 
     //Save selected co-ordinate.
     int CurrentCoordinate = 0;
+    Sailor SailorScript;
     void SelectCoordinate()
     {
-        SpriteName = SemaphoreTranslations[new ArmPositions(PurplePos, BluePos)];
-        if (CurrentCoordinate == 0)
-        {
-            SelectedCoordinates[0] = SpriteName;
-            CurrentCoordinate = 1;
+        if (!(PurplePos == 4 && BluePos == 4)){
+            SpriteName = SemaphoreTranslations[new ArmPositions(PurplePos, BluePos)];
+            if (CurrentCoordinate == 0)
+            {
+                SelectedCoordinates[0] = SpriteName;
+                CurrentCoordinate = 1;
+            }
+            else if (CurrentCoordinate == 1)
+            {
+                SelectedCoordinates[1] = SpriteName;
+                CurrentCoordinate = 0;
+
+                SailorScript.ConfirmDestination(SelectedCoordinates[0], SelectedCoordinates[1]);
+            }
+            ShowCoordinates();
         }
-        else if (CurrentCoordinate == 1)
+    }
+    //.
+
+    //Show current co-ordinates.
+    private SpriteSetter FirstCoord;
+    private SpriteSetter SecondCoord;
+    void ShowCoordinates()
+    {
+        if (CurrentCoordinate == 1)
         {
-            SelectedCoordinates[1] = SpriteName;
-            CurrentCoordinate = 0;
+            FirstCoord.SetLetter(SelectedCoordinates[0]);
         }
-        print(SelectedCoordinates[0] + SelectedCoordinates[1]);
+        else if (CurrentCoordinate == 0)
+        {
+            SecondCoord.SetLetter(SelectedCoordinates[1]);
+        }
     }
     //.
 }
