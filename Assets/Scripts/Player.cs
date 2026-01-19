@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,8 +8,8 @@ using static SemaphoreDictionary;
 
 public class Player : MonoBehaviour
 {
-    public InputActionAsset controls;
-    private InputActionMap ArmControls;
+    public InputActionAsset Controls;
+    private InputActionMap GameControls;
     
     private SemaphoreDictionary SemaphoreDictionaryFile;
     Dictionary<ArmPositions, string> SemaphoreTranslations;
@@ -21,7 +22,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        ArmControls = controls.FindActionMap("ArmMovements");
+        GameControls = Controls.FindActionMap("GameControls");
 
         SemaphoreDictionaryFile = GetComponent<SemaphoreDictionary>();
         SemaphoreTranslations = new Dictionary<ArmPositions, string>();
@@ -42,27 +43,27 @@ public class Player : MonoBehaviour
     //Controls.
     private void Update()
     {
-        if (ArmControls.FindAction("PurpleClock").WasPressedThisFrame())
+        if (GameControls.FindAction("PurpleClock").WasPressedThisFrame())
         {
             CheckValidArms("Purple", 1);
             SetSprite();
         }
-        if (ArmControls.FindAction("PurpleAnti").WasPressedThisFrame())
+        if (GameControls.FindAction("PurpleAnti").WasPressedThisFrame())
         {
             CheckValidArms("Purple", -1);
             SetSprite();
         }
-        if (ArmControls.FindAction("BlueClock").WasPressedThisFrame())
+        if (GameControls.FindAction("BlueClock").WasPressedThisFrame())
         {
             CheckValidArms("Blue", 1);
             SetSprite();
         }
-        if (ArmControls.FindAction("BlueAnti").WasPressedThisFrame())
+        if (GameControls.FindAction("BlueAnti").WasPressedThisFrame())
         {
             CheckValidArms("Blue", -1);
             SetSprite();
         }
-        if (ArmControls.FindAction("Enter").WasPressedThisFrame())
+        if (GameControls.FindAction("Enter").WasPressedThisFrame())
         {
             SelectCoordinate();
         }
@@ -147,7 +148,27 @@ public class Player : MonoBehaviour
                 SailorScript.ConfirmDestination(SelectedCoordinates[0], SelectedCoordinates[1]);
             }
             ShowCoordinates();
+            
+            //Resets after both are inputted.
+            if (CurrentCoordinate == 0)
+            {
+                StartCoroutine(ResetCoordinates());
+            }
+            //.
         }
+    }
+    //.
+
+    //Reset co-ordinates for next round.
+    IEnumerator ResetCoordinates()
+    {
+        yield return new WaitForSeconds(2);
+
+        SelectedCoordinates[0] = " ";
+        SelectedCoordinates[1] = " ";
+
+        FirstCoord.spriteRenderer.enabled = false;
+        SecondCoord.spriteRenderer.enabled = false;
     }
     //.
 

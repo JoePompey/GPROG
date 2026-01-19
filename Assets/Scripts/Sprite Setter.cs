@@ -6,7 +6,9 @@ public class SpriteSetter : MonoBehaviour
     private Sprite[] ArmSprites = new Sprite[27];
     private Sprite[] LetterSprites = new Sprite[26];
     private Sprite[] HeartSprites = new Sprite[4];
-    private SpriteRenderer spriteRenderer;
+    private Sprite[] EmotionSprites = new Sprite[2];
+    private Sprite[] NumberSprites = new Sprite[10];
+    public SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
@@ -14,6 +16,8 @@ public class SpriteSetter : MonoBehaviour
         ArmSprites = Resources.LoadAll<Sprite>("Semaphore_Spritesheet");
         LetterSprites = Resources.LoadAll<Sprite>("Alphabet_Spritesheet");
         HeartSprites = Resources.LoadAll<Sprite>("Hearts_Spritesheet");
+        EmotionSprites = Resources.LoadAll<Sprite>("Emotions");
+        NumberSprites = Resources.LoadAll<Sprite>("Number_Spritesheet");
         //.
 
         //Gets sprite ready.
@@ -56,6 +60,7 @@ public class SpriteSetter : MonoBehaviour
         }
         //.
 
+        spriteRenderer.enabled = true;
         spriteRenderer.sprite = LetterSprites[SpriteIndex];
     }
     //.
@@ -64,6 +69,22 @@ public class SpriteSetter : MonoBehaviour
     public void SetHearts(int DesiredHearts)
     {
         spriteRenderer.sprite = HeartSprites[DesiredHearts];
+    }
+    //.
+
+    //Sets the sprite to correct emotion.
+    //-- 0 is Angry, 1 is Happy.
+    public void SetEmotion(int DesiredEmotion, bool EmotionVisible)
+    {
+        spriteRenderer.enabled = EmotionVisible;
+        spriteRenderer.sprite = EmotionSprites[DesiredEmotion];
+    }
+    //.
+
+    //Sets the sprite to correct number.
+    public void SetNumber(int Number)
+    {
+        spriteRenderer.sprite = NumberSprites[Number];
     }
     //.
 }

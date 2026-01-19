@@ -1,22 +1,30 @@
 using System.Collections;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Sailor : MonoBehaviour
 {
     private void Start()
     {
+        //Loading references.
         SpriteSetterFile = GetComponent<SpriteSetter>();
         MapScript = GameObject.Find("Tilemap").GetComponent<MapBuilder>();
 
         Alphabet = new Sprite[26];
         Alphabet = Resources.LoadAll<Sprite>("Alphabet_Spritesheet");
 
-        HeartsScript = GameObject.Find("HeartsSprite").GetComponent<SpriteSetter>();
+        HeartsSetter = GameObject.Find("HeartsSprite").GetComponent<SpriteSetter>();
+        EmotionSetter = GameObject.Find("EmotionSprite").GetComponent<SpriteSetter>();
+        HundredsSetter = GameObject.Find("Hundreds").GetComponent<SpriteSetter>();
+        TensSetter = GameObject.Find("Tens").GetComponent<SpriteSetter>();
+        UnitsSetter = GameObject.Find("Units").GetComponent<SpriteSetter>();
+        //.
 
         DecideIsland();
         NameSplitter();
-        StartCoroutine(MoveArms());
+        MoveArmsCoroutine = StartCoroutine(MoveArms());
+        EmotionSetter.SetEmotion(0, false);
     }
     
     //Decides what island they want to go to.
@@ -57,6 +65,7 @@ public class Sailor : MonoBehaviour
     //Sets correct sprite for letter.
     private SpriteSetter SpriteSetterFile;
     [SerializeField] int delay = 2;
+    Coroutine MoveArmsCoroutine;
     IEnumerator MoveArms()
     {
         bool Repeat = true;
@@ -73,11 +82,17 @@ public class Sailor : MonoBehaviour
     //.
 
     //Resets sailor for next round.
-    void ResetSailor()
+    IEnumerator ResetSailor()
     {
+        yield return new WaitForSeconds(2);
+
+        StopCoroutine(MoveArmsCoroutine);
+        MoveArmsCoroutine = null;
+
+        EmotionSetter.SetEmotion(0, false);
         DecideIsland();
         NameSplitter();
-        StartCoroutine(MoveArms());
+        MoveArmsCoroutine = StartCoroutine(MoveArms());
     }
     //.
 
@@ -130,20 +145,61 @@ public class Sailor : MonoBehaviour
 
     //Gain point and display.
     int CurrentPoints = 0;
+    SpriteSetter EmotionSetter;
     void GainPoint()
     {
         CurrentPoints += 1;
+        EmotionSetter.SetEmotion(1, true);
+
+        SetPointsVisual();
+        StartCoroutine(ResetSailor());
     }
 
     //.
 
     //Lose life and display.
-    SpriteSetter HeartsScript;
+    SpriteSetter HeartsSetter;
     int CurrentHearts = 3;
     void LoseLife()
     {
         CurrentHearts -= 1;
-        HeartsScript.SetHearts(CurrentHearts);
+        HeartsSetter.SetHearts(CurrentHearts);
+        EmotionSetter.SetEmotion(0, true);
+
+        //Game overs if all lives lost.
+        if (CurrentHearts == 0)
+        {
+            SceneManager.LoadScene("GameOverScreen");
+        }
+        //.
+
+        StartCoroutine(ResetSailor());
+    }
+    //.
+
+    //Sets up points display.
+    SpriteSetter HundredsSetter;
+    SpriteSetter TensSetter;
+    SpriteSetter UnitsSetter;
+    void SetPointsVisual()
+    {
+        //Calculates individual digits.
+        int Remainder = CurrentPoints;
+        
+        int Hundreds = Remainder / 100;
+        Remainder -= Hundreds;
+
+        int Tens = Remainder / 10;
+        Remainder -= Tens;
+
+        int Units = Remainder;
+        //.
+
+        //Calls the SpriteSetters.
+        HundredsSetter.SetNumber(Hundreds);
+        TensSetter.SetNumber(Tens);
+        UnitsSetter.SetNumber(Units);
+        //.
     }
     //.
 }

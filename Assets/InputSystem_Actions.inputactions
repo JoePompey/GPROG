@@ -993,7 +993,7 @@
             ]
         },
         {
-            "name": "ArmMovements",
+            "name": "GameControls",
             "id": "ae82a916-3887-40b4-90d9-d5169c18d236",
             "actions": [
                 {
@@ -1063,6 +1063,15 @@
                     "name": "OpenIslandNames",
                     "type": "Button",
                     "id": "1843eddb-fa68-420c-a270-de32c91378a4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OpenHelp",
+                    "type": "Button",
+                    "id": "79e152d0-c39b-4efd-b90c-2c179f924ac2",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -1155,6 +1164,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "OpenIslandNames",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "135cb43e-88e1-4e9f-b414-42af2a156fcc",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenHelp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

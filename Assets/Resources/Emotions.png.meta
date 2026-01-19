@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 05ba4f1aea074b94d85ed18e8fe9d255
+guid: f2d8ae09a1037c84ea54abff558b5ab2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6400774336578956676
-    second: SI Title_0
+      213: 8384765133992846830
+    second: Emotions_0
+  - first:
+      213: 7071851643102575423
+    second: Emotions_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SI Title_0
+      name: Happy
       rect:
         serializedVersion: 2
-        x: 17
-        y: 593
-        width: 2270
-        height: 1190
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48da93ba85e14d850800000000000000
-      internalID: 6400774336578956676
+      spriteID: ee569b8077bac5470800000000000000
+      internalID: 8384765133992846830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Angry
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b3463e993442260800000000000000
+      internalID: 7071851643102575423
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dd623ee5e0aa8904d8523ceaee508512
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +158,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      SI Title_0: 6400774336578956676
+      Angry: 7071851643102575423
+      Happy: 8384765133992846830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
